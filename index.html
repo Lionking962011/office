@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>OFFICE RECONGNISATION</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Teko:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="/css/css.css">
+    </head>
+    <body onload="load()">
+        <a id="link"href="" download="png.png"></a>
+        <center>
+        <h1 style="background-color: aliceblue; font-weight: 300; font-family: 'Teko', sans-serif; font-size: 50px;">OFFICE RECONGNISATION</h1>
+        <b style="color: rgb(250, 224, 228);">This Model Is Trained To Find Out The Following People</b>
+        <br><div id="listedpeople">
+            <ol>
+                <img class="image" src="/img/Saache/WhatsApp Image 2021-08-25 at 10.22.04 PM.jpeg">
+                <li style="color: rgb(0, 0, 0)">Saache</li>
+                <hr>
+                <img class="image" src="/img/Swati/WhatsApp Image 2021-08-25 at 10.42.09 PM (1).jpeg">
+                <li style="color: black">Swati</li>
+                <hr>
+                <img class="image" src="/img/Nitin/WhatsApp Image 2021-08-25 at 10.27.39 PM.jpeg">
+                <li style="color: black">Nitin</li>
+            </ol>
+        </div>
+        <br>
+        <button id="takeimg" class="btn btn-danger">Taka My Image</button>
+        <br><br>
+        <div id="camera"></div>
+        <br>
+        <div id="result"></div>
+        <br>
+        <button id="show" onclick="takeimage()"class="btn btn-success">Show the result</button>
+        <br>
+        <div>
+        <h3 id="sell">How much it is matching</h3><span id="how"></span>
+        <h3 id="person">Person</h3><span id="name"></span>
+    </center>
+    </div>
+    <script src="/js/js.js"></script>
+    </body>
+</html>
